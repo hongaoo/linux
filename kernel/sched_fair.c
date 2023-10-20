@@ -22,6 +22,8 @@
 
 #include <linux/latencytop.h>
 
+extern void update_rq_clock(struct rq *rq);
+
 /*
  * Targeted preemption latency for CPU-bound tasks:
  * (default: 20ms * (1 + ilog(ncpus)), units: nanoseconds)
